@@ -1,23 +1,23 @@
 package user;
 
-import controller.AttractionController;
-import controller.ProductController;
-import controller.UserController;
+import controller.AttractionManager;
+import controller.ProductManager;
+import controller.UserManager;
 
 public class Administrator {
-    private ProductController productController;
-    private AttractionController attractionController;
-    private UserController userController;
+    private ProductManager productManager;
+    private AttractionManager attractionManager;
+    private UserManager userManager;
 
-    public ProductController getProductController() {
-        return productController;
+    public ProductManager getProductController() {
+        return productManager;
     }
 
-    public AttractionController getAttractionController() {
-        return attractionController;
+    public AttractionManager getAttractionController() {
+        return attractionManager;
     }
 
-    public UserController getUserController() {
-        return userController;
+    public UserManager getUserController() {
+        return userManager;
     }
 }

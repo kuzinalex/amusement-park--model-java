@@ -1,17 +1,23 @@
 package user;
 
-import controller.OrderController;
+import controller.OrderManager;
 import model.*;
 
 public class User {
     private String password;
-    private PersonalData personalData;
+ //   private PersonalData personalData;
     private PersonalAccount personalAccount;
-    private OrderController orderController;
+    private OrderManager orderManager;
+
+    public User(String password, OrderManager orderManager) {
+        this.password = password;
+        this.personalAccount = new PersonalAccount();
+        this.orderManager = orderManager;
+    }
 
     public void chooseAttraction(Attraction attraction){}
     public void chooseProduct(Product product){}
-    public void toOrder(Order order){}
+    public void toOrder(){}
     public void showOrderHistory(){}
     public void changePassword(){}
     public void addData(PersonalData personalData){}
@@ -20,15 +26,11 @@ public class User {
         return password;
     }
 
-    public PersonalData getPersonalData() {
-        return personalData;
-    }
-
     public PersonalAccount getPersonalAccount() {
         return personalAccount;
     }
 
-    public OrderController getOrderController() {
-        return orderController;
+    public OrderManager getOrderController() {
+        return orderManager;
     }
 }

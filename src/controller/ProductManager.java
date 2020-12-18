@@ -4,7 +4,7 @@ import model.Product;
 
 import java.util.List;
 
-public class ProductController {
+public class ProductManager {
     private List<Product> productList;
     public void add(Product product){}
     public void change(Product product){}

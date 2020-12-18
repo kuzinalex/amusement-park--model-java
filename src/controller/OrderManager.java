@@ -4,10 +4,17 @@ import model.Order;
 
 import java.util.List;
 
-public class OrderController {
+public class OrderManager {
 
     private List<Order> orderList;
-    public void add(Order order){}
+
+    public OrderManager(List<Order> orderList) {
+        this.orderList = orderList;
+    }
+
+    public void add(){
+        orderList.add(new Order());
+    }
     public void change(Order order){}
     public void delete(Order order){}
 

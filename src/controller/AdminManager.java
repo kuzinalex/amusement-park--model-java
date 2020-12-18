@@ -4,7 +4,7 @@ import user.Administrator;
 
 import java.util.List;
 
-public class AdminController {
+public class AdminManager {
     private List<Administrator> administrators;
     public void add(Administrator administrator){}
     public void change(Administrator administrator){}

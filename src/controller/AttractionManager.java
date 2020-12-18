@@ -4,7 +4,7 @@ import model.Attraction;
 
 import java.util.List;
 
-public class AttractionController {
+public class AttractionManager {
     private List<Attraction> attractionList;
 
     public void add(Attraction attraction){}

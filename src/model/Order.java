@@ -5,7 +5,6 @@ import user.User;
 public class Order {
     private Ticket ticket;
     private Basket basket;
-    private User user;
 
     public Ticket getTicket() {
         return ticket;
@@ -23,11 +22,4 @@ public class Order {
         this.basket = basket;
     }
 
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
 }

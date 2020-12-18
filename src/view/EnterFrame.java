@@ -17,9 +17,9 @@ public class EnterFrame extends JFrame {
     AdminController adminController;
     UserController userController;
 
-    EnterFrame(AdminController adminController, UserController userController){
-        this.adminController=adminController;
-        this.userController=userController;
+    EnterFrame(){
+        this.adminController=new AdminController();
+        this.userController=new UserController();
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 

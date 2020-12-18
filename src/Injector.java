@@ -1,3 +1,3 @@
-public class Initializer {
+public class Injector {
     public void initialize(){}
 }

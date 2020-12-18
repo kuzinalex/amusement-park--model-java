@@ -6,20 +6,20 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class TicketBuyFrame extends JFrame {
+public class PersonalAccountFrame extends JFrame {
     private JPanel panel= new JPanel();
-    private JButton ticketBuyButton = new JButton("Купить билет");
+    private JButton productBuyButton = new JButton("Обновить данные");
     private JButton backButton = new JButton("Назад");
 
     User user;
 
-    TicketBuyFrame(){
+    PersonalAccountFrame(){
 
         user=new User();
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-        ticketBuyButton.addActionListener(new ActionListener() {
+        productBuyButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
@@ -33,8 +33,9 @@ public class TicketBuyFrame extends JFrame {
             }
         });
 
-        panel.add(ticketBuyButton);
+        panel.add(productBuyButton);
         panel.add(backButton);
         add(panel);
+        setVisible(true);
     }
 }
